@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: Kontra;
+    src: url("./fonts/Kontra.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: HelveticaNew;
+    src: url("./fonts/HelveticaNowText-Regular.ttf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: Din;
+    src: url("./fonts/Din.ttf");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: CamptonBold;
+    src: url("./fonts/CamptonBold.otf");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+    font-family: CamptonBook;
+    src: url("./fonts/CamptonBook.otf");
+}
+
+/* See Junction Font */
+
+* {
+    font-family: CamptonBold;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(white, #cdd2ed);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    transition: 2s;
+}
+
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(5px 5px 10px #cdd2ed);
+}
+
+.descriptor {
+    background-color: #e2e4f1;
+    border-radius: 5px;
+    font-family: CamptonBook;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.unbold {
+    font-family: CamptonBook;
+    font-weight: normal;
+}
+
+.outerCircle {
+    border-radius: 15px;
+    margin: auto;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 10px #cdd2ed);
+    transition: 0.5s;
+}
+
+.up {
+    background-image: linear-gradient(#00a89d, #9cf9ab);
+}
+
+.down {
+    background-image: linear-gradient(#d10f0f, #f9ce9c);
+}
+
+.neutral {
+    background-image: linear-gradient(#d1d1d1, #ffffff);
+}
+
+.innerCircle {
+    border-radius: 10px;
+    background-color: rgb(250, 246, 246);
+    margin: 5px;
+    width: 210px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.technicals-grid {
+    grid-template-columns: 5fr 1fr 1fr;
+}
+
+.queryBar {
+    border-radius: 10px;
+    background-color: #e2e4f1;
+    color: black;
+    padding: 10px;
+    border: none;
+    margin-right: 15px;
 }
