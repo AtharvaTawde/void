@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Void: Stock Dashboard and Technical Analysis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Get Started
+
+Node.js is required to run this project. 
+### `npm install yarn` 
+Will install the package manager `yarn`, which handles the packages used in this project.
+
+### `yarn`
+Will install all the necessary dependencies in order to run the project.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
-Runs the app in the development mode.\
+Boots up the clientside application locally.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `yarn server`
 
-### `npm test`
+Boots up the serverside application locally.\
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+A search bar to browse through the thousands of tickers out there.
+![image](https://github.com/AtharvaTawde/void/assets/15206414/6b38ebce-8f97-4356-a0a9-dd4276f3d32a)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A simple candlestick chart that displays the daily price action. 
+![image](https://github.com/AtharvaTawde/void/assets/15206414/fc386b62-eafb-472e-b941-31287df8b6d2)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A technical panel to display metrics and their naive interpretations.
+![image](https://github.com/AtharvaTawde/void/assets/15206414/e3517e42-718d-439a-9044-8376d6ff4675)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How it works
 
-### `npm run eject`
+All raw data is scraped using the Axios and Cheerio libraries and parsed serverside. The client communicates with the server to display the information cleanly. When a user enters a valid ticker into the search-box, a request is sent to the server to scrape the corresponding Yahoo Finance page. When all data is collected, the information is displayed on the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/AtharvaTawde/void/assets/15206414/e4cc14ba-e1a1-47fe-8990-98e0f9734e38)
