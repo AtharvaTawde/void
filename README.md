@@ -28,7 +28,7 @@ Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 A search bar to browse through the thousands of tickers out there.
 ![image](https://github.com/AtharvaTawde/void/assets/15206414/6b38ebce-8f97-4356-a0a9-dd4276f3d32a)
 
-A simple candlestick chart that displays the daily price action. 
+A simple candlestick chart that displays the last 70 days of price action. 
 ![image](https://github.com/AtharvaTawde/void/assets/15206414/fc386b62-eafb-472e-b941-31287df8b6d2)
 
 A technical panel to display metrics and their naive interpretations.
